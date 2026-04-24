@@ -89,15 +89,15 @@ Deskripsikan dengan jelas dan detil dari permasalahan yang ingin diselesaikan pa
 
 == TEORI PENUNJANG
 
-Uraikan dengan jelas dasar teori yang menunjang penelitian proyek akhir yang akan dilakukan. Teori penunjang menguraikan dasar-dasar teori, temuan, dan bahan dari pustaka ilmiah lain, yang dijadikan landasan untuk melakukan proyek akhir yang diusulkan. Uraian dalam Teori Penunjang menjadi landasan untuk menyusun kerangka atau konsep yang akan digunakan dalam proyek akhir. Pada pembahasan teori penunjang, jangan lupa untuk menyebutkan semua kutipan dengan rujukan yang jelas seperti ini [2].
+Uraikan dengan jelas dasar teori yang menunjang penelitian proyek akhir yang akan dilakukan. Teori penunjang menguraikan dasar-dasar teori, temuan, dan bahan dari pustaka ilmiah lain, yang dijadikan landasan untuk melakukan proyek akhir yang diusulkan. Uraian dalam Teori Penunjang menjadi landasan untuk menyusun kerangka atau konsep yang akan digunakan dalam proyek akhir. Pada pembahasan teori penunjang, jangan lupa untuk menyebutkan semua kutipan dengan rujukan yang jelas seperti ini @jurnal_example.
 
 == PENELITIAN TERKAIT
 
-Penelitian terkait memuat hasil penelitian pihak lain yang mempunyai Problem yang sama dengan penelitian kita, tetapi dengan menggunakan Uniqueness yang berbeda. Disini ceritakan bagaimana penelitian-penelitian terkait telah mencoba untuk menyelesaikan permasalahan yang sama dengan kita, dengan cara mereka masing-masing yang ditunjukkan dengan kutipan terhadap pustaka. Penelitian terkait yang baik melibatkan kajian pustaka yang relevan dan terpercaya dari jurnal ilmiah internasional ataupun nasional, presentasi ilmiah internasional ataupun nasional, dan buku atau catatan rujukan ilmiah. Penulis harus mencantumkan sumber referensi pada daftar pustaka manakala penulis melakukan rujukan dan kutipan dari pihak lain secara jujur dan benar seperti ini [3]. Pencantuman sumber referensi perlu dilakukan baik terhadap kutipan langsung ataupun kutipan tidak langsung (parafrase).
+Penelitian terkait memuat hasil penelitian pihak lain yang mempunyai Problem yang sama dengan penelitian kita, tetapi dengan menggunakan Uniqueness yang berbeda. Disini ceritakan bagaimana penelitian-penelitian terkait telah mencoba untuk menyelesaikan permasalahan yang sama dengan kita, dengan cara mereka masing-masing yang ditunjukkan dengan kutipan terhadap pustaka. Penelitian terkait yang baik melibatkan kajian pustaka yang relevan dan terpercaya dari jurnal ilmiah internasional ataupun nasional, presentasi ilmiah internasional ataupun nasional, dan buku atau catatan rujukan ilmiah. Penulis harus mencantumkan sumber referensi pada daftar pustaka manakala penulis melakukan rujukan dan kutipan dari pihak lain secara jujur dan benar seperti ini @seminar_example. Pencantuman sumber referensi perlu dilakukan baik terhadap kutipan langsung ataupun kutipan tidak langsung (parafrase).
 
-Untuk kutipan langsung dan pendek (1-2 baris), cara penulisan rujukan untuk kutipan dilakukan dengan memberikan tanda petik ganda di awal dan akhir kutipan dan ditulis miring dan kemudian diiringi dengan sumber referensi pada daftar pustaka, seperti ini "_Ini contoh penulisan rujukan untuk kutipan langsung dan pendek_" [3, 4]. Sedangkan untuk kutipan langsung dan panjang (lebih dari 2 baris), Penulis dapat menuliskannya seperti dibawah ini.
+Untuk kutipan langsung dan pendek (1-2 baris), cara penulisan rujukan untuk kutipan dilakukan dengan memberikan tanda petik ganda di awal dan akhir kutipan dan ditulis miring dan kemudian diiringi dengan sumber referensi pada daftar pustaka, seperti ini "_Ini contoh penulisan rujukan untuk kutipan langsung dan pendek_" @seminar_example@buku_example. Sedangkan untuk kutipan langsung dan panjang (lebih dari 2 baris), Penulis dapat menuliskannya seperti dibawah ini.
 
-#quote()["Ini contoh penulisan rujukan untuk kutipan langsung dan panjang, ditulis pada paragraf terpisah dengan dengan memberikan tanda petik ganda di awal dan akhir kutipan, ukuran font 10 point dan margin kanan kiri yang masuk 10 mm dari batas penulisan, kemudian diiringi dengan sumber referensi pada daftar pustaka." [5]. Untuk kutipan tidak langsung (parafrase), penulis dapat menuliskan sumber referensi setelah kalimat parafrase selesai, seperti ini [6]. ]
+#quote()["Ini contoh penulisan rujukan untuk kutipan langsung dan panjang, ditulis pada paragraf terpisah dengan dengan memberikan tanda petik ganda di awal dan akhir kutipan, ukuran font 10 point dan margin kanan kiri yang masuk 10 mm dari batas penulisan, kemudian diiringi dengan sumber referensi pada daftar pustaka." @skripsi_example. Untuk kutipan tidak langsung (parafrase), penulis dapat menuliskan sumber referensi setelah kalimat parafrase selesai, seperti ini @mediapublik_example. ]
 
 = DESAIN SISTEM
 
@@ -131,7 +131,7 @@ Penulisan persamaan diletakkan pada baris sendiri rata kiri yang masuk 10 mm dar
 
 Untuk cara penulisan tabel, tabel diletakkan rata tengah, dengan menyisakan 1 (satu) baris kosong diatas dan dibawah tabel. Setiap tabel harus mempunyai nomer identitas tabel dan diiringi dengan keterangan tabel, yang dituliskan rata tengah dan tebal. Nomer identitas dan keterangan tabel dituliskan pada 1 (satu) baris dibawah tabel. Nomer identitas terdiri dari nomer bab dan nomer urutan tabel pada bab tersebut. Setiap tabel harus dirujuk dan dibahas pada pembahasan dalam paragraf, seperti kalimat berikut. Tabel 3.1 menunjukkan contoh penulisan tabel, yang terdiri dari nomer identitas dan keterangan tabel, dan kemudian isi tabel.
 
-{table 1}
+{table 1}@online_example
 
 Judul pada tabel dapat dituliskan rata tengah, tebal dan berlatar- belakang agak gelap. Jika isi tabel adalah kutipan, maka penulis dapat menyebutkan sumber referensi dari tabel dibawah tabel dengan rata tengah dan ditulis dengan ukuran 10 point, seperti yang terlihat pada Tabel 3.1. Satu tabel tidak boleh melebihi dari 1 (satu) halaman. Jika isi tabel terlalu banyak lebih dari 1 (satu) halaman, penulis dapat memecah tabel dan memberikan identitas tabel yang berbeda.
 
@@ -164,5 +164,5 @@ Judul pada tabel dapat dituliskan rata tengah, tebal dan berlatar- belakang agak
 #content-placeholder()
 
 #set heading(numbering: none)
-= DAFTAR PUSTAKA
+#bibliography("citation/refs.bib", title: "DAFTAR PUSTAKA", style: "citation/pens.csl")
 
