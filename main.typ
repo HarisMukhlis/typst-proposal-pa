@@ -1,4 +1,5 @@
-#import "template.typ": proposal, content-placeholder
+#import "template.typ": proposal
+#import "components/placeholder.typ": content-placeholder
 
 #show: proposal.with(
   title: "judul proyek akhir",
@@ -115,7 +116,7 @@ Desain sistem adalah penjelasan teknikal dari solusi yang berisi urutan-urutan p
 
 Gambar diletakkan rata tengah, dengan menyisakan 1 (satu) baris kosong diatas dan dibawah gambar. Setiap gambar harus mempunyai nomer identitas gambar dan diiringi dengan keterangan gambar, yang dituliskan rata tengah dan tebal. Nomer identitas dan keterangan gambar dituliskan pada 1 (satu) baris dibawah gambar. Nomer identitas terdiri dari nomer bab dan nomer urutan gambar pada bab tersebut. Setiap gambar harus dirujuk dan dibahas pada pembahasan dalam paragraf, seperti kalimat berikut. Gambar 3.1 menunjukkan bagan desain sistem yang mempunyai tiga bagian. Jika isi gambar adalah kutipan, maka penulis dapat menyebutkan sumber referensi dari gambar dibawah gambar dan diatas identitas gambar, dengan rata tengah dan ditulis dengan ukuran 10 point, seperti yang terlihat pada Gambar 3.2.
 
-{fig 1}
+{diagram1}
 
 === Bagian 1
 
@@ -125,7 +126,7 @@ Disini penulis dapat menjelaskan lebih terperinci apa saja yang ada pada bagian 
 
 #content-placeholder() Apabila pembahasan penulis memerlukan penulisan persamaan matematis, penulis dapat menuliskannya seperti pada Persamaan 3.1.
 
-{math 1}
+$ f_i^t = f_i^(t-1) + alpha . (f_i^(t-1) - f_(i-1)^(t-1)) $
 
 Penulisan persamaan diletakkan pada baris sendiri rata kiri yang masuk 10 mm dari batas kiri, dengan menyisakan 1 (satu) baris kosong diatas dan dibawah gambar. Setiap persamaan harus mempunyai nomer identitas persamaan yang dituliskan rata kanan dan tebal. Setiap persamaan harus dirujuk dan dibahas pada pembahasan dalam paragraf, seperti kalimat berikut. Persamaan 3.1 menunjukkan keterhubungan antara fungsi pada waktu sekarang dan sebelumnya.
 
