@@ -1,4 +1,4 @@
-#import "template.typ": proposal
+#import "template.typ": image-format, proposal, table-format
 #import "components/placeholder.typ": content-placeholder
 
 #show: proposal.with(
@@ -41,43 +41,51 @@ Jelaskan tentang sistematika pembahasan dalam buku proyek akhir yang
 meliputi :
 
 #figure(
+  numbering: none,
   align(center)[#table(
     columns: (23.9%, 76.1%),
-    align: (auto,auto,),
-    table.header([#strong[Bab 1]], [#strong[Pendahuluan]
+    align: (auto, auto),
+    table.header(
+      [#strong[Bab 1]],
+      [#strong[Pendahuluan]
 
-      Jelaskan tentang apa saja yang dibahas pada Bab 1. Penjelasan
-      memuat bagian-bagian penting pada Pendahuluan
+        Jelaskan tentang apa saja yang dibahas pada Bab 1. Penjelasan
+        memuat bagian-bagian penting pada Pendahuluan
 
-      ],),
+      ],
+    ),
     table.hline(),
-    [#strong[Bab 2]], [#strong[Kajian Pustaka]
+    [#strong[Bab 2]],
+    [#strong[Kajian Pustaka]
 
-    Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat
-    bagian-bagian penting pada Kajian Pustaka.
-
-    ],
-    [#strong[Bab 3]], [#strong[Desain Sistem]
-
-    Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat
-    bagian-bagian penting pada Desain Sistem.
+      Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat
+      bagian-bagian penting pada Kajian Pustaka.
 
     ],
-    [#strong[Bab 4]], [#strong[Eksperimen dan Analisis]
+    [#strong[Bab 3]],
+    [#strong[Desain Sistem]
 
-    Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat
-    bagian-bagian penting pada Eksperimen dan Analisis.
-
-    ],
-    [#strong[Bab 5]], [#strong[Penutup]
-
-    Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat
-    bagian-bagian penting pada Penutup.
+      Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat
+      bagian-bagian penting pada Desain Sistem.
 
     ],
-  )]
-  , kind: table
-  )
+    [#strong[Bab 4]],
+    [#strong[Eksperimen dan Analisis]
+
+      Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat
+      bagian-bagian penting pada Eksperimen dan Analisis.
+
+    ],
+    [#strong[Bab 5]],
+    [#strong[Penutup]
+
+      Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat
+      bagian-bagian penting pada Penutup.
+
+    ],
+  )],
+  kind: table,
+)
 
 = KAJIAN PUSTAKA
 
@@ -116,7 +124,14 @@ Desain sistem adalah penjelasan teknikal dari solusi yang berisi urutan-urutan p
 
 Gambar diletakkan rata tengah, dengan menyisakan 1 (satu) baris kosong diatas dan dibawah gambar. Setiap gambar harus mempunyai nomer identitas gambar dan diiringi dengan keterangan gambar, yang dituliskan rata tengah dan tebal. Nomer identitas dan keterangan gambar dituliskan pada 1 (satu) baris dibawah gambar. Nomer identitas terdiri dari nomer bab dan nomer urutan gambar pada bab tersebut. Setiap gambar harus dirujuk dan dibahas pada pembahasan dalam paragraf, seperti kalimat berikut. Gambar 3.1 menunjukkan bagan desain sistem yang mempunyai tiga bagian. Jika isi gambar adalah kutipan, maka penulis dapat menyebutkan sumber referensi dari gambar dibawah gambar dan diatas identitas gambar, dengan rata tengah dan ditulis dengan ukuran 10 point, seperti yang terlihat pada Gambar 3.2.
 
-{diagram1}
+#image-format("media/diagram1.jpg", "Desain system dari Solusi yang ditawarkan", img-width: 2.78in)
+\
+#image-format(
+  "media/diagram2.png",
+  "Contoh gambar kutipan",
+  source: "http://cdn3.techworld.com/cmsdata/features/3210134/cisco-search-patent.jpg",
+  img-width: 2.71in,
+)
 
 === Bagian 1
 
@@ -132,7 +147,15 @@ Penulisan persamaan diletakkan pada baris sendiri rata kiri yang masuk 10 mm dar
 
 Untuk cara penulisan tabel, tabel diletakkan rata tengah, dengan menyisakan 1 (satu) baris kosong diatas dan dibawah tabel. Setiap tabel harus mempunyai nomer identitas tabel dan diiringi dengan keterangan tabel, yang dituliskan rata tengah dan tebal. Nomer identitas dan keterangan tabel dituliskan pada 1 (satu) baris dibawah tabel. Nomer identitas terdiri dari nomer bab dan nomer urutan tabel pada bab tersebut. Setiap tabel harus dirujuk dan dibahas pada pembahasan dalam paragraf, seperti kalimat berikut. Tabel 3.1 menunjukkan contoh penulisan tabel, yang terdiri dari nomer identitas dan keterangan tabel, dan kemudian isi tabel.
 
-{table 1}@online_example
+#table-format(
+  "Daftar Mahasiswa Berprestasi",
+  (2in, 1.37in, 1.32in),
+  source: [Badan Pusat Pengolahan Data, 2012 @online_example],
+  [Kolom 1], [Kolom 2], [Kolom 3],
+  [ ], [ ], [ ],
+  [ ], [ ], [ ],
+  [ ], [ ], [ ],
+)
 
 Judul pada tabel dapat dituliskan rata tengah, tebal dan berlatar- belakang agak gelap. Jika isi tabel adalah kutipan, maka penulis dapat menyebutkan sumber referensi dari tabel dibawah tabel dengan rata tengah dan ditulis dengan ukuran 10 point, seperti yang terlihat pada Tabel 3.1. Satu tabel tidak boleh melebihi dari 1 (satu) halaman. Jika isi tabel terlalu banyak lebih dari 1 (satu) halaman, penulis dapat memecah tabel dan memberikan identitas tabel yang berbeda.
 
