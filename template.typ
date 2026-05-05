@@ -174,7 +174,7 @@
         align(center)[#image(img-path, width: img-width)],
         if source != none {
           //optional source
-          align(center)[#text(size: 12pt)[Sumber : ]#link(source)[#source]]
+          align(center)[#text(size: 12pt)[Sumber : #source]]
           v(10pt)
         },
       ),
@@ -210,7 +210,7 @@
         }
         #table(
           columns: cols,
-          rows: .23in,
+          rows: auto,
           align: center,
           fill: (col, row) => if row == 0 { rgb("D1D1D1") } else { none },
           ..body

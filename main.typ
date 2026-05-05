@@ -40,52 +40,63 @@ Uraikan kontribusi proyek akhir pada pengembangan ilmu pengetahuan teknologi dan
 Jelaskan tentang sistematika pembahasan dalam buku proyek akhir yang
 meliputi :
 
-#figure(
-  numbering: none,
-  align(center)[#table(
-    columns: (23.9%, 76.1%),
-    align: (auto, auto),
-    table.header(
+#{
+  set par(first-line-indent: 0pt)
+  figure(
+    numbering: none,
+    align(center)[#table(
+      columns: (23.9%, 76.1%),
+      rows: .77in,
+      stroke: none,
+      align: top + left,
       [#strong[Bab 1]],
       [#strong[Pendahuluan]
 
         Jelaskan tentang apa saja yang dibahas pada Bab 1. Penjelasan
         memuat bagian-bagian penting pada Pendahuluan
 
+        \
       ],
-    ),
-    table.hline(),
-    [#strong[Bab 2]],
-    [#strong[Kajian Pustaka]
 
-      Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat
-      bagian-bagian penting pada Kajian Pustaka.
+      [#strong[Bab 2]],
+      [#strong[Kajian Pustaka]
 
-    ],
-    [#strong[Bab 3]],
-    [#strong[Desain Sistem]
+        Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat
+        bagian-bagian penting pada Kajian Pustaka.
 
-      Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat
-      bagian-bagian penting pada Desain Sistem.
+        \
+      ],
 
-    ],
-    [#strong[Bab 4]],
-    [#strong[Eksperimen dan Analisis]
+      [#strong[Bab 3]],
+      [#strong[Desain Sistem]
 
-      Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat
-      bagian-bagian penting pada Eksperimen dan Analisis.
+        Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat
+        bagian-bagian penting pada Desain Sistem.
 
-    ],
-    [#strong[Bab 5]],
-    [#strong[Penutup]
+        \
+      ],
 
-      Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat
-      bagian-bagian penting pada Penutup.
+      [#strong[Bab 4]],
+      [#strong[Eksperimen dan Analisis]
 
-    ],
-  )],
-  kind: table,
-)
+        Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat
+        bagian-bagian penting pada Eksperimen dan Analisis.
+
+        \
+      ],
+
+      [#strong[Bab 5]],
+      [#strong[Penutup]
+
+        Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat
+        bagian-bagian penting pada Penutup.
+
+        \
+      ],
+    )],
+    kind: table,
+  )
+}
 
 = KAJIAN PUSTAKA
 
@@ -129,7 +140,7 @@ Gambar diletakkan rata tengah, dengan menyisakan 1 (satu) baris kosong diatas da
 #image-format(
   "media/diagram2.png",
   "Contoh gambar kutipan",
-  source: "http://cdn3.techworld.com/cmsdata/features/3210134/cisco-search-patent.jpg",
+  source: [#link("http://cdn3.techworld.com/cmsdata/features/3210134/cisco-search-patent.jpg")],
   img-width: 2.71in,
 )
 
@@ -151,10 +162,18 @@ Untuk cara penulisan tabel, tabel diletakkan rata tengah, dengan menyisakan 1 (s
   "Daftar Mahasiswa Berprestasi",
   (2in, 1.37in, 1.32in),
   source: [Badan Pusat Pengolahan Data, 2012 @online_example],
-  [Kolom 1], [Kolom 2], [Kolom 3],
-  [ ], [ ], [ ],
-  [ ], [ ], [ ],
-  [ ], [ ], [ ],
+  [Kolom 1],
+  [Kolom 2],
+  [Kolom 3],
+  [#v(.13in)],
+  [ ],
+  [ ],
+  [#v(.13in)],
+  [ ],
+  [ ],
+  [#v(.13in)],
+  [ ],
+  [ ],
 )
 
 Judul pada tabel dapat dituliskan rata tengah, tebal dan berlatar- belakang agak gelap. Jika isi tabel adalah kutipan, maka penulis dapat menyebutkan sumber referensi dari tabel dibawah tabel dengan rata tengah dan ditulis dengan ukuran 10 point, seperti yang terlihat pada Tabel 3.1. Satu tabel tidak boleh melebihi dari 1 (satu) halaman. Jika isi tabel terlalu banyak lebih dari 1 (satu) halaman, penulis dapat memecah tabel dan memberikan identitas tabel yang berbeda.
