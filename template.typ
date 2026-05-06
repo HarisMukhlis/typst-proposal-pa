@@ -41,41 +41,43 @@
   )
 
   v(.4fr)
+  {
+    set par(justify: false)
+    text(size: 18pt)[
+      #align(center)[
+        #text(weight: "bold")[#upper(title)]
+      ]
 
-  text(size: 18pt)[
-    #align(center)[
-      #text(weight: "bold")[#upper(title)]
-    ]
+      #v(1fr)
 
-    #v(1fr)
+      #align(center)[
+        #text(weight: "bold", size: 18pt, lang: "en")[ #titlecase()[#name \ ]]
+        #text(size: 18pt)[NRP. #nrp] \ \
+      ]
 
-    #align(center)[
-      #text(weight: "bold", size: 18pt, lang: "en")[ #titlecase()[#name \ ]]
-      #text(size: 18pt)[NRP. #nrp] \ \
-    ]
+      #align(center)[
+        #text(weight: "bold")[DOSEN PEMBIMBING] \
+        #set text(lang: "en")
+        #titlecase()[#advisor1] \
+        NIP. #nip1 \ \
+        #titlecase()[#advisor2]
+        \
+        NIP. #nip2
+      ]
 
-    #align(center)[
-      #text(weight: "bold")[DOSEN PEMBIMBING] \
-      #set text(lang: "en")
-      #titlecase()[#advisor1] \
-      NIP. #nip1 \ \
-      #titlecase()[#advisor2]
-      \
-      NIP. #nip2
-    ]
+      #v(1fr)
 
-    #v(1fr)
-
-    #align(center)[
-      #text(weight: "bold")[
-        PROGRAM STUDI SARJANA TERAPAN \
-        #upper(prodi) \
-        #upper(departemen) \
-        POLITEKNIK ELEKTRONIKA NEGERI SURABAYA \
-        2025
+      #align(center)[
+        #text(weight: "bold")[
+          PROGRAM STUDI SARJANA TERAPAN \
+          #upper(prodi) \
+          #upper(departemen) \
+          POLITEKNIK ELEKTRONIKA NEGERI SURABAYA \
+          2025
+        ]
       ]
     ]
-  ]
+  }
 
   pagebreak()
 
@@ -155,72 +157,75 @@
 }
 
 #let image-format(img-path, caption-text, source: none, img-width: 50%) = {
-  set align(center)
-  set figure.caption(separator: [ ])
-  show figure.caption: set text(size: 10pt, style: "italic")
+  align(center)[
 
-  text(size: 9pt)[
+    #set figure.caption(separator: [ ])
+    #show figure.caption: set text(size: 10pt, style: "italic")
+
+    #text(size: 9pt)[
+      #figure(
+        caption: caption-text,
+        kind: image,
+        supplement: "Gambar",
+        numbering: n => {
+          let chap = counter(heading).get()
+          if chap.len() > 0 [#chap.first(). #n] else [#n]
+        },
+        stack(
+          dir: ttb,
+          spacing: 8pt,
+          image(img-path, width: img-width),
+          if source != none {
+            //optional source
+            block(above: 8pt, below: 10pt)[
+              #text(size: 12pt)[Sumber : #source]
+            ]
+          },
+        ),
+      )
+    ]
+  ]
+}
+
+#let table-format(caption-text, source: none, cols, bold-header: true, ..body) = {
+  align(center)[
+
+    #set figure.caption(separator: [ ], position: top)
+    #show figure.caption: set text(size: 10pt, style: "italic")
+
+    #v(8pt)
     #figure(
       caption: caption-text,
-      kind: image,
-      supplement: "Gambar",
+      kind: table,
+      supplement: "Tabel",
       numbering: n => {
-        let chap = counter(heading).get().first()
-        [#chap. #n]
+        let chap = counter(heading).get()
+        if chap.len() > 0 [#chap.first(). #n] else [#n]
       },
       stack(
         dir: ttb,
         spacing: 8pt,
-        align(center)[#image(img-path, width: img-width)],
-        if source != none {
-          //optional source
-          align(center)[#text(size: 12pt)[Sumber : #source]]
+        {
           v(10pt)
+
+          if bold-header {
+            show table.cell.where(y: 0): set text(weight: "bold")
+          }
+
+          table(
+            columns: cols,
+            rows: auto,
+            align: center,
+            fill: (col, row) => if row == 0 { rgb("D1D1D1") } else { none },
+            ..body
+          )
+        },
+        if source != none {
+          block(above: 8pt, below: 10pt)[
+            #text(size: 12pt)[Sumber : #source]
+          ]
         },
       ),
-    )]
-}
-
-#let table-format(caption-text, source: none, cols, bold-header: true, ..body) = {
-  set align(center)
-  set figure.caption(separator: [ ])
-  show figure.caption: set text(size: 10pt, style: "italic")
-  show figure.where(kind: table): set figure.caption(position: top)
-
-  v(8pt)
-  figure(
-    caption: caption-text,
-    kind: table,
-    supplement: "Tabel",
-    numbering: n => {
-      let chap = counter(heading).get().first()
-      [#chap. #n]
-    },
-    stack(
-      dir: ttb,
-      spacing: 8pt,
-      align(center)[
-        #v(10pt)
-        #show table.cell: it => {
-          if bold-header and it.y == 0 {
-            strong(it)
-          } else {
-            it
-          }
-        }
-        #table(
-          columns: cols,
-          rows: auto,
-          align: center,
-          fill: (col, row) => if row == 0 { rgb("D1D1D1") } else { none },
-          ..body
-        )
-      ],
-      if source != none {
-        //optional source
-        align(center)[#text(size: 12pt)[Sumber : #source]]
-        v(10pt)
-      },
-    ),
-  )
+    )
+  ]
 }
