@@ -1,4 +1,5 @@
-#box(image("media/logo-pens.jpg", height: 0.78667in, width: 0.8in))#strong[PROPOSAL]
+//file ini ga kepake. hasil convert dari .docx ke .typ menggunakan pandoc
+#box(image("media/logo-pens.png", height: 0.78667in, width: 0.8in))#strong[PROPOSAL]
 
 #strong[PROYEK AKHIR]
 
