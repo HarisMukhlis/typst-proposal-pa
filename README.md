@@ -13,7 +13,7 @@ Template ini udah sesuai sama **Buku Panduan Proposal PA PENS**, mencakup format
 Kalo kamu gak ingin repot menginstal aplikasi di laptop, kamu bisa menggunakan Typst lewat browser:
 1. Buka [Typst Web App](https://typst.app/).
 2. Buat akun / Login.
-3. Buat *Blank Project*, lalu *upload* semua file dari folder repositori ini ke dalam project tersebut.
+3. Buat *Blank Project*, lalu *upload* semua file dari folder repositori ini ke dalam project tersebut. *(bisa langsung drag satu folder)*
 4. Buka file `main.typ`, dan hasil proposalmu akan langsung terlihat di panel sebelah kanan.
 5. File projek bisa didownload/export menjadi .PDF dengan tombol *"Quick Preview"* di pojok kanan atas preview.
 
