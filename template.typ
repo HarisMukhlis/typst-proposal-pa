@@ -73,7 +73,7 @@
           #upper(prodi) \
           #upper(departemen) \
           POLITEKNIK ELEKTRONIKA NEGERI SURABAYA \
-          2025
+          #datetime.today().year()
         ]
       ]
     ]
