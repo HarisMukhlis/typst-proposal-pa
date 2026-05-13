@@ -1,13 +1,10 @@
-<center>
-  <h1>
-    <b>Template Proposal Proyek Akhir PENS</b> (Typst)
-  </h1>
+<h1 align="center">
+  <b>Template Proposal Proyek Akhir PENS</b> (Typst)
+</h1>
 
-  ![Typst](https://img.shields.io/badge/Typst-0.11+-239DAD&logo=typst&logoColor=white)
-  ![PENS](https://img.shields.io/badge/PENS-Proposal_PA-blue)
-  ![License](https://img.shields.io/badge/License-MIT-success)
-  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-</center>
+![Typst](https://img.shields.io/badge/Typst-0.11+-239DAD&logo=typst&logoColor=white)
+![PENS](https://img.shields.io/badge/PENS-Proposal_PA-blue)
+![License](https://img.shields.io/badge/License-MIT-success)
 
 Repositori ini berisi *template* Typst untuk menulis Proposal Proyek Akhir (PA) Sarjana Terapan di Politeknik Elektronika Negeri Surabaya (PENS). 
 
@@ -19,7 +16,7 @@ Template ini udah sesuai sama **Buku Panduan Proposal PA PENS**, mencakup format
 [Cara Menggunakan](#apa-saja-yang-perlu-diubah) \
 [Fitur & Kelebihan](#fitur-bantuan-fungsi-khusus)
 
-## **Panduan**
+## Panduan
 
 ### Lewat web Typst (Tanpa Install)
 
@@ -47,7 +44,7 @@ _(Alternatifnya, kamu bisa instal [Typst CLI](https://typst.app/docs/installatio
 
 ---
 
-## Apa Saja yang **Perlu Diubah**?
+## Apa Saja yang Perlu Diubah?
 
 Kamu **hanya perlu mengedit 2 file utama**:
 
@@ -77,7 +74,7 @@ Jika ingin menggunakan [Zotero](https://www.zotero.org/) atau [Mendeley](https:/
 
 ---
 
-## **Fitur Bantuan** (Fungsi Khusus)
+## Fitur Bantuan (Fungsi Khusus)
 Template ini udah menyediakan fungsi khusus agar format tabel dan gambar sesuai panduan PENS.
 
 ### Memasukkan Gambar:
