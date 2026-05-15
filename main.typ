@@ -47,6 +47,7 @@ meliputi :
     align(center)[#table(
       columns: (23.9%, 76.1%),
       rows: .77in,
+      inset: (left: .08in, right: .08in),
       stroke: none,
       align: top + left,
       [#strong[Bab 1]],
@@ -160,7 +161,7 @@ Untuk cara penulisan tabel, tabel diletakkan rata tengah, dengan menyisakan 1 (s
 
 #table-format(
   "Daftar Mahasiswa Berprestasi",
-  (2in, 1.37in, 1.32in),
+  columns: (2in, 1.37in, 1.32in),
   source: [Badan Pusat Pengolahan Data, 2012 @online_example],
   [Kolom 1],
   [Kolom 2],

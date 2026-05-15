@@ -187,7 +187,12 @@
   ]
 }
 
-#let table-format(caption-text, source: none, cols, bold-header: true, ..body) = {
+#let table-format(
+  caption-text,
+  source: none,
+  bold-header: true,
+  ..body,
+) = {
   align(center)[
 
     #set figure.caption(separator: [ ], position: top)
@@ -208,17 +213,21 @@
         {
           v(10pt)
 
-          if bold-header {
-            show table.cell.where(y: 0): set text(weight: "bold")
-          }
-
-          table(
-            columns: cols,
+          let tbl = table(
+            columns: auto,
             rows: auto,
+            inset: (left: .08in, right: .08in, top: .06in, bottom: 0.06in),
             align: center,
             fill: (col, row) => if row == 0 { rgb("D1D1D1") } else { none },
             ..body
           )
+
+          if bold-header {
+            show table.cell.where(y: 0): set text(weight: "bold")
+            tbl
+          } else {
+            tbl
+          }
         },
         if source != none {
           block(above: 8pt, below: 10pt)[
