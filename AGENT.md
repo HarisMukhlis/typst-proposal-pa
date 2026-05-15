@@ -40,7 +40,9 @@ Never use the standard Typst `#table(...)` directly for formal tables. You **MUS
 ```typst
 #table-format(
   "Caption of the table",
-  (2in, 1.5in, 1.5in), // Array of column widths
+  columns: (2in, 1.5in, 1.5in), // Array of column widths
+  rows: (.77in), // Optional row height. Don't use this parameter to make it automatic
+  bold-header: true, // Optionally makes the first row bold, defaults to TRUE
   source: [Optional source text or @citation],
   [Header 1], [Header 2], [Header 3], // The first row is automatically bolded
   [Row 1 Col 1], [Row 1 Col 2], [Row 1 Col 3],
@@ -69,7 +71,7 @@ When helping the user write sections, strictly adhere to this structure:
   - **PERMASALAHAN**: Must clearly state the specific Problem.
   - **TUJUAN**: Must contain the Uniqueness/Originality claim. Should start with: `"Penelitian proyek akhir ini mengajukan suatu pendekatan/metode baru untuk mengatasi..."`
   - **MANFAAT**: Specific contributions to technology, society, or institutions.
-  - **SISTEMATIKA PENULISAN**: Table explaining Chapter 1 to 5.
+  - **SISTEMATIKA PENULISAN**: Table explaining Chapter 1 to 5. IMPORTANT NOTE, make sure to adjust this specific table's rows height to roughly fit the content since this doesnt use the regular table format.
 - **BAB 2: KAJIAN PUSTAKA**
   - **DESKRIPSI PERMASALAHAN**: Detailed breakdown of the problem.
   - **TEORI PENUNJANG**: Theoretical background with heavy citations.

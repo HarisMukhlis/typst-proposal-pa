@@ -70,7 +70,10 @@ Masukkan semua referensi jurnal, buku, atau website ke dalam file ini menggunaka
 
 #### Zotero / Mendeley
 
-Jika ingin menggunakan [Zotero](https://www.zotero.org/) atau [Mendeley](https://www.mendeley.com/), bisa export langsung dari aplikasi pihak ketiga tersebut dalam format **BibTeX**, ataupun **Better BibTeX** _(untuk sync otomatis)_. Khusus versi web, jika punya akun **Typst Pro**, akun Mendeley/Zotero bisa dihubungkan langsung.
+Jika ingin menggunakan [Zotero](https://www.zotero.org/) atau [Mendeley](https://www.mendeley.com/), bisa export langsung dari aplikasi pihak ketiga tersebut dalam format **BibTeX**. Khusus versi web, jika punya akun **Typst Pro** (berbayar), integrasi Mendeley/Zotero bisa dihubungkan langsung.
+
+> [!NOTE]
+> Gunakan plugin **Better BibTeX** di Zotero untuk sinkronisasi otomatis, atau versi _legacy_ dari Mendeley a.k.a. Mendeley Desktop (**BUKAN** Mendeley Reference Manager). Tidak wajib tapi rekomen 👍
 
 ---
 
@@ -97,7 +100,8 @@ Gunakan fungsi `#table-format`.
 ```typst
 #table-format(
   "Judul Tabel",
-  (1fr, 1fr), //lebar kolom
+  columns: (1fr, 1fr), //lebar per kolom, nentuin juga berapa banyak kolomnya
+  rows: (.9in), //tinggi per baris, opsional kalau kosong jadi otomatis
   source: [Sumber Tabel (opsional)], //untuk sumber yg berupa link, gunakan [#link()]
   [Kolom 1], [Kolom 2],
   [Isi 1], [Isi 2]
