@@ -71,7 +71,7 @@ When helping the user write sections, strictly adhere to this structure:
   - **PERMASALAHAN**: Must clearly state the specific Problem.
   - **TUJUAN**: Must contain the Uniqueness/Originality claim. Should start with: `"Penelitian proyek akhir ini mengajukan suatu pendekatan/metode baru untuk mengatasi..."`
   - **MANFAAT**: Specific contributions to technology, society, or institutions.
-  - **SISTEMATIKA PENULISAN**: Table explaining Chapter 1 to 5. IMPORTANT NOTE, make sure to adjust this specific table's rows height to roughly fit the content since this doesnt use the regular table format.
+  - **SISTEMATIKA PENULISAN**: Table explaining Chapter 1 to 5.
 - **BAB 2: KAJIAN PUSTAKA**
   - **DESKRIPSI PERMASALAHAN**: Detailed breakdown of the problem.
   - **TEORI PENUNJANG**: Theoretical background with heavy citations.

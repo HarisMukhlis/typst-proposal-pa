@@ -42,61 +42,56 @@ meliputi :
 
 #{
   set par(first-line-indent: 0pt)
-  figure(
-    numbering: none,
-    align(center)[#table(
-      columns: (23.9%, 76.1%),
-      rows: .77in,
-      inset: (left: .08in, right: .08in),
-      stroke: none,
-      align: top + left,
-      [#strong[Bab 1]],
-      [#strong[Pendahuluan]
+  align(center)[#table(
+    columns: (23.9%, 76.1%),
+    inset: (left: .08in, right: .08in, top: 0in, bottom: 0in),
+    stroke: none,
+    align: top + left,
+    [#strong[Bab 1]],
+    [#strong[Pendahuluan]
 
-        Jelaskan tentang apa saja yang dibahas pada Bab 1. Penjelasan
-        memuat bagian-bagian penting pada Pendahuluan
+      Jelaskan tentang apa saja yang dibahas pada Bab 1. Penjelasan
+      memuat bagian-bagian penting pada Pendahuluan
 
-        \
-      ],
+      \
+    ],
 
-      [#strong[Bab 2]],
-      [#strong[Kajian Pustaka]
+    [#strong[Bab 2]],
+    [#strong[Kajian Pustaka]
 
-        Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat
-        bagian-bagian penting pada Kajian Pustaka.
+      Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat
+      bagian-bagian penting pada Kajian Pustaka.
 
-        \
-      ],
+      \
+    ],
 
-      [#strong[Bab 3]],
-      [#strong[Desain Sistem]
+    [#strong[Bab 3]],
+    [#strong[Desain Sistem]
 
-        Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat
-        bagian-bagian penting pada Desain Sistem.
+      Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat
+      bagian-bagian penting pada Desain Sistem.
 
-        \
-      ],
+      \
+    ],
 
-      [#strong[Bab 4]],
-      [#strong[Eksperimen dan Analisis]
+    [#strong[Bab 4]],
+    [#strong[Eksperimen dan Analisis]
 
-        Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat
-        bagian-bagian penting pada Eksperimen dan Analisis.
+      Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat
+      bagian-bagian penting pada Eksperimen dan Analisis.
 
-        \
-      ],
+      \
+    ],
 
-      [#strong[Bab 5]],
-      [#strong[Penutup]
+    [#strong[Bab 5]],
+    [#strong[Penutup]
 
-        Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat
-        bagian-bagian penting pada Penutup.
+      Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat
+      bagian-bagian penting pada Penutup.
 
-        \
-      ],
-    )],
-    kind: table,
-  )
+      \
+    ],
+  )]
 }
 
 = KAJIAN PUSTAKA
