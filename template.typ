@@ -194,7 +194,8 @@
   ..body,
 ) = {
   align(center)[
-
+    
+    #show figure: set block(breakable: true)
     #set figure.caption(separator: [ ], position: top)
     #show figure.caption: set text(size: 10pt, style: "italic")
 
@@ -217,7 +218,9 @@
             columns: auto,
             rows: auto,
             inset: (left: .08in, right: .08in, top: .06in, bottom: 0.06in),
-            align: center,
+            align: (col, row) => {
+              if row == 0 { center + horizon } else { left }
+            },
             fill: (col, row) => if row == 0 { rgb("D1D1D1") } else { none },
             ..body
           )
